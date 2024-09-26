@@ -1,12 +1,12 @@
 /*****
- @file: Proj1.java
- ∗ @description: This program serves as the entry point for parsing a file. It ensures that
- ∗              the user provides exactly one argument, which is the filename to be parsed.
- ∗              If the number of arguments is incorrect, an error message is displayed, and
- ∗              the program terminates. The program then creates a new instance of the
- ∗              Parser class to process the file.
- ∗ @author: Aashi Patel
- ∗ @date: September 19, 2024
+ * @file: Proj1.java
+ * @description: This program serves as the entry point for the Taylor Swift discography
+ *               parser application. It checks for the correct number of command-line
+ *               arguments (expecting a filename) and initializes the Parser to process
+ *               the input file. This class orchestrates the overall execution of the
+ *               discography search and display functionalities.
+ * @author: Aashi Patel
+ * @date: September 26, 2024
  ****/
 
 import java.io.FileNotFoundException;

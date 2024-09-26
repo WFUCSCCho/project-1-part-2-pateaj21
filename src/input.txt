@@ -1,12 +1,3 @@
 search Shake It Off
 print_album 1989
 search All Too Well (Taylor's Version)
-print_album Red
-print
-search Cruel Summer
-print_album Lover
-search Invisible String
-print_album folklore
-search You're Losing Me
-print_album Midnights
-print
