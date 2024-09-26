@@ -1,6 +1,9 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Arrays;
+
+import static java.lang.StringUTF16.compareTo;
 
 public class Taylor_Discography {
     private BST<Taylor_Discography_Data> bst;
@@ -16,6 +19,8 @@ public class Taylor_Discography {
             br.readLine(); // Skip header
             while ((line = br.readLine()) != null) {
                 String[] values = line.split(",(?=([^\"]*\"[^\"]*\")*[^\"]*$)");
+                String s = Arrays.toString(values);
+                System.out.println(s);
                 Taylor_Discography_Data data = new Taylor_Discography_Data(
                         values[0], // album
                         values[1], // track_title
@@ -35,12 +40,16 @@ public class Taylor_Discography {
     // Method to search for a track by title
     public Taylor_Discography_Data searchTrack(String title) {
         for (Taylor_Discography_Data data : bst) {
-            if (data.getTrackTitle().equalsIgnoreCase(title)) {
-                return data;
+            int comp = compareTo(data);
+            Taylor_Discography_Data.compareTo(data);
+
+            if (compareTo(other.album){
+
             }
         }
         return null;
     }
+
 
     // Method to print all tracks in an album
     public void printAlbumTracks(String albumName) {

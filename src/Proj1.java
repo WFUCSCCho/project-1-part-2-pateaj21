@@ -20,7 +20,7 @@ public class Proj1 {
             System.err.println("Argument count is invalid: " + args.length);
             System.exit(0);
         }
-        // Create a new Parser object and pass the filename to it for parsing.
+        // Create a new Parser object and pass the filename to it for parsing
         new Parser(args[0]);
     }
 }

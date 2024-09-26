@@ -29,8 +29,8 @@ public class Parser {
     // Constructor: Takes the input file name, clears the output file, and processes the commands
     public Parser(String filename) throws FileNotFoundException {
         taylorDiscography = new Taylor_Discography();
-        taylorDiscography.populateBSTFromCSV("Taylor_discography.csv");
-        //clearFile("./result.txt"); // Clear the result file before processing new commands
+        taylorDiscography.populateBSTFromCSV("/Users/aashipatel/IdeaProjects/project-1-part-2-pateaj21/src/Taylor_discography.csv");
+        clearFile("./output.txt"); // Clear the result file before processing new commands
         process(new File(filename));
     }
 

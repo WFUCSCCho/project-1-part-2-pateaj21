@@ -10,7 +10,8 @@ public class Taylor_Discography_Data implements Comparable<Taylor_Discography_Da
     private String writers;
 
     // Default constructor
-    public Taylor_Discography_Data() {}
+    public Taylor_Discography_Data() {
+    }
 
     // Parameterized constructor
     public Taylor_Discography_Data(String album, String track_title, int track_number, String released_year, String lyrics, String label, String writers) {
@@ -26,6 +27,23 @@ public class Taylor_Discography_Data implements Comparable<Taylor_Discography_Da
     // Copy constructor
     public Taylor_Discography_Data(Taylor_Discography_Data other) {
         this(other.album, other.track_title, other.track_number, other.released_year, other.lyrics, other.label, other.writers);
+    }
+
+    // Getters
+    public String getAlbum() {
+        return album;
+    }
+
+    public String getTrackTitle() {
+        return track_title;
+    }
+
+    public int getTrackNumber() {
+        return track_number;
+    }
+
+    public String getReleasedYear() {
+        return released_year;
     }
 
     // toString method
@@ -48,22 +66,27 @@ public class Taylor_Discography_Data implements Comparable<Taylor_Discography_Da
                 Objects.equals(label, that.label) &&
                 Objects.equals(writers, that.writers);
     }
+    //search method in here
+    public Taylor_Discography_Data searchTrack(String title) {
+        for (Taylor_Discography_Data data : bst) {
+            int comp = compareTo(data);
+            Taylor_Discography_Data.compareTo(data);
+
+            if (compareTo(other.album){
+
+            }
+        }
+        return null;
+    }
 
     // compareTo method
-    @Override
     public int compareTo(Taylor_Discography_Data other) {
+        //compare by albums alphabetically
         int albumComparison = this.album.compareTo(other.album);
-        if (albumComparison != 0) return albumComparison;
-        return Integer.compare(this.track_number, other.track_number);
-    }
+        //if  albums are same, return the result of that comparison
+        if (albumComparison == 0) {
+        return Integer.parseInt(other.album);
+    } return 0;
 
-    public String getTrackTitle() {
-        return track_title;
     }
-
-    public String getAlbum() {
-        return album;
-    }
-
-    // Getters and setters (omitted for brevity, but should be implemented)
 }
